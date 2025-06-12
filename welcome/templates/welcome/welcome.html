@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qure.ai Support</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'welcome/support.css' %}">
+</head>
+<body>
+    <div class="support-container">
+        <div class="support-card">
+            <div class="support-title">Qure.ai Support</div>
+            <div class="support-subtitle">How can we help you today? Our team is here to assist you 24/7.</div>
+        </div>
+        <div class="widget-area">
+            <!-- ElevenLabs Convai Widget -->
+            <elevenlabs-convai id="elevenlabs-widget" agent-id="agent_01jx4x57dqfw2r8cvz1jg5h00x"></elevenlabs-convai>
+        </div>
+    </div>
+    <div class="footer">&copy; 2024 Qure.ai &mdash; AI-powered healthcare support</div>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+    <script src="{% static 'welcome/support.js' %}"></script>
+</body>
+</html> 
